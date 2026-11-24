@@ -1,83 +1,505 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seedlings — Política de privacidad / Privacy Policy</title>
+<title>Seedlings — Privacy Policy / Política de privacidad</title>
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; line-height: 1.55; color: #1d2a1f; background: #f7faf5; }
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; line-height: 1.55; color: #1d2a1f; background: #f7faf5; overflow-wrap: anywhere; }
   h1 { font-size: 1.6em; } h2 { margin-top: 1.8em; font-size: 1.2em; }
-  hr { margin: 3em 0; border: 0; border-top: 1px solid #c9d6c4; }
   .fecha { color: #5b6b58; font-size: .9em; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  nav a { padding: 6px 12px; border: 1px solid #c9d6c4; border-radius: 16px; color: inherit; text-decoration: none; }
+  nav a[aria-current] { background: #2f5d3a; border-color: #2f5d3a; color: #fff; }
+  section + section { margin-top: 4em; border-top: 1px solid #c9d6c4; }
+  .uno section { display: none; margin-top: 0; border-top: 0; }
+  .uno section.ver { display: block; }
 </style>
 </head>
 <body>
 
+<nav aria-label="Language">
+  <a href="#es" lang="es" hreflang="es">Español</a>
+  <a href="#en" lang="en" hreflang="en">English</a>
+  <a href="#pt" lang="pt" hreflang="pt">Português</a>
+  <a href="#fr" lang="fr" hreflang="fr">Français</a>
+  <a href="#de" lang="de" hreflang="de">Deutsch</a>
+  <a href="#ja" lang="ja" hreflang="ja">日本語</a>
+  <a href="#ko" lang="ko" hreflang="ko">한국어</a>
+  <a href="#zh-Hant" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+</nav>
+
+<section id="es" lang="es">
 <h1>Política de privacidad de Seedlings</h1>
-<p class="fecha">Última actualización: 4 de noviembre de 2026</p>
+<p class="fecha">Última actualización: 24 de noviembre de 2026</p>
 
-<p>Seedlings es un juego para Android desarrollado por Noah Reaver Games. Esta política explica qué datos maneja el juego.</p>
+<p>Seedlings es un juego para Android desarrollado por Noah Reaver Games. Esta política explica qué datos maneja el juego, para qué y cómo pedir que se eliminen.</p>
 
-<h2>Datos que recopilamos</h2>
-<p><strong>Ninguno de forma automática.</strong> Esta versión de Seedlings no recopila, no envía por sí sola y no comparte datos personales ni datos de uso con nosotros ni con terceros. No pide crear una cuenta ni iniciar sesión. La única excepción es el informe de rendimiento que describe la sección siguiente, y solo si decides enviarlo.</p>
+<h2>Resumen</h2>
+<p>No vendemos tus datos. No pedimos tu correo, tu ubicación ni tus contactos. Puedes jugar sin iniciar sesión en Google Play Games y sin conexión. Los datos que llegan a nuestro servidor se guardan en Google Firebase y viajan cifrados (HTTPS).</p>
 
-<h2>Informe de rendimiento (opcional)</h2>
-<p>En Ajustes, la versión de prueba ofrece el botón <strong>Enviar informe</strong>. Al tocarlo, el juego arma un archivo .zip, lo guarda en la carpeta de Descargas de tu dispositivo y abre el selector de Android para que lo mandes por la app que elijas. Nada se envía si no completas ese envío.</p>
-<p>El informe contiene datos técnicos: modelo del dispositivo, versión de Android y del juego, memoria RAM, tipo de gráficos, registros de fluidez y de memoria, las pantallas e imágenes del juego a las que se refieren esos registros, y los motivos de los últimos cierres de la app. No contiene tu progreso, ni tu colección, ni datos personales. Quien lo recibe también ve lo que muestre la app que uses, por ejemplo tu dirección de correo o tu número.</p>
-<p>Usamos el informe solo para mejorar el rendimiento del juego y no lo compartimos con terceros. Puedes borrar el archivo de Descargas cuando quieras y pedirnos que eliminemos el que recibimos, escribiendo al contacto de abajo.</p>
+<h2>Identificadores</h2>
+<p>Al conectarse, el juego crea una identidad anónima por instalación (Firebase Authentication) y usa un identificador aleatorio de tu partida. Si inicias sesión en Google Play Games, recibe tu nombre y tu identificador de jugador de Play Games; no recibe tu correo. Para que nadie use tu partida en tu nombre, nuestro servidor comprueba esa cuenta con Google y guarda una huella (hash) del identificador.</p>
 
-<h2>Datos guardados en tu dispositivo</h2>
-<p>Tu partida (progreso, colección y ajustes) se guarda solamente en la memoria de tu dispositivo. No sale de él. Si desinstalas el juego o borras sus datos, la partida se pierde.</p>
+<h2>Ranking</h2>
+<p>Para el Ranking enviamos tu nombre de jugador (al principio, el de Play Games si iniciaste sesión; puedes cambiarlo), tu imagen de perfil y portada del juego, tu Rango y tus partidas de la Arena terminadas (puntos, duración, turnos y resultado). <strong>Los demás jugadores de tu tabla ven tu nombre, tus imágenes, tu Rango y tus puntos.</strong> También guardamos señales de partidas imposibles o alteradas para evitar trampas.</p>
 
-<h2>Anuncios y compras</h2>
-<p>Esta versión no muestra anuncios de ninguna red publicitaria y no procesa pagos con dinero real.</p>
+<h2>Invitaciones</h2>
+<p>Cada partida tiene un código de invitación. Si te vinculas a quien te invitó, con su enlace o su código, guardamos <strong>quién invitó a quién</strong> y los stickers que consigues desde entonces, para entregar los premios y evitar abusos. También guardamos cuándo empezó tu partida y si terminaste tu primer bioma, para comprobar que la invitación es válida. Quien te invitó ve tu nombre de jugador, tu imagen y los stickers que le diste; tú ves su nombre. Lo que compartes lo envía la app que elijas. Para leer el código del enlace, el juego consulta una vez el origen de la instalación que informa Google Play.</p>
 
-<h2>Descargas de contenido</h2>
-<p>Parte del contenido del juego se descarga después de instalarlo, a través de Google Play. Esa descarga la gestiona Google Play bajo su propia <a href="https://policies.google.com/privacy">política de privacidad</a>.</p>
+<h2>Estadísticas y errores</h2>
+<p>El juego envía automáticamente estadísticas de uso (sesiones, avance, acciones, recursos, anuncios vistos y compras), el modelo del dispositivo, la memoria, las versiones de Android y del juego, el rendimiento, los errores y los motivos de cierre de la app. Van con el identificador de la instalación y el de tu partida, sin tu nombre. También envía grabaciones de tus partidas de la Arena: son las jugadas, no video ni audio. Los usamos para arreglar fallas, balancear el juego y mejorar a sus rivales.</p>
+
+<h2>Reportar un problema</h2>
+<p>Solo si lo envías, «Reportar un problema» manda el mensaje que escribes, los registros técnicos, las estadísticas de la sesión y una copia de tu partida, que incluye tu nombre de jugador y los identificadores de tu dispositivo y de Play Games. Lo usamos para encontrar y arreglar el problema.</p>
+
+<h2>Protección contra trampas</h2>
+<p>El juego puede pedir a Google Play Integrity una comprobación de que la app es la original y de que el dispositivo no está modificado. Guardamos su resultado y la fecha, asociados a tu instalación.</p>
+
+<h2>Partida y respaldo</h2>
+<p>Tu partida se guarda en tu dispositivo. Si inicias sesión en Google Play Games, también se guarda una copia en tu cuenta, con las partidas guardadas de Google, para recuperarla en otro dispositivo. Esa copia incluye un identificador del dispositivo que la escribió.</p>
+
+<h2>Anuncios</h2>
+<p>Los anuncios con premio los sirve Google AdMob. Su SDK puede recopilar y compartir con Google el identificador de publicidad, el identificador del conjunto de apps y, cuando corresponda, otros identificadores relacionados con las cuentas con sesión iniciada en el dispositivo; la dirección IP (de la que se deduce una ubicación aproximada); tu interacción con los anuncios, y datos del dispositivo y de diagnóstico, para mostrar y medir anuncios, obtener estadísticas y prevenir fraudes. Los anuncios pueden ser personalizados, con tu consentimiento donde corresponda. En ese caso, verás un formulario de consentimiento antes del primer anuncio y después podrás cambiar tu elección en Ajustes › Privacidad de los anuncios. Puedes borrar o limitar el identificador de publicidad en los ajustes de Android. Más información: <a href="https://policies.google.com/technologies/partner-sites">cómo usa Google los datos</a>.</p>
+
+<h2>Compras</h2>
+<p>Los pagos los procesa Google Play; no recibimos los datos de tu tarjeta. El juego recibe el producto y el comprobante de la compra, guarda en tu partida qué órdenes ya entregó y registra la compra en las estadísticas.</p>
+
+<h2>Servicios de Google y descargas</h2>
+<p>Firebase, Play Games, Play Integrity, AdMob, la facturación y las descargas de contenido de Google Play procesan datos según la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. Como cualquier servicio en línea, reciben tu dirección IP. El juego también baja de nuestro servidor datos de balance y regalos para tu partida.</p>
+
+<h2>Con quién se comparten</h2>
+<p>Salvo lo que otros jugadores ven en el Ranking y las invitaciones, lo que Google procesa para prestar estos servicios y lo que exija la ley, no compartimos tus datos con terceros.</p>
+
+<h2>Conservación y eliminación</h2>
+<p>Conservamos los datos mientras sirvan para los fines de esta política. Para pedir que eliminemos los de tu cuenta del juego, escribe a <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a> con tu nombre de jugador y tu código de invitación, así podemos ubicarla. Los datos de tu dispositivo se borran al desinstalar el juego; la copia de Play Games se administra desde tu cuenta de Google.</p>
 
 <h2>Niños</h2>
-<p>El juego no está dirigido a menores de 13 años y no recopila datos de forma automática de nadie, incluidos menores.</p>
+<p>El juego no está dirigido a menores de 13 años. Si crees que un menor de esa edad nos dio datos, escríbenos y los eliminaremos.</p>
 
 <h2>Cambios en esta política</h2>
-<p>Si una versión futura del juego empieza a recopilar datos de forma automática (por ejemplo, estadísticas de partidas para balancear el juego, anuncios o compras), esta página se actualizará antes de que esa versión se publique y explicará qué datos se recopilan y para qué.</p>
+<p>Si cambia lo que el juego recopila, actualizaremos esta página antes de publicar esa versión.</p>
 
 <h2>Contacto</h2>
 <p>Consultas sobre privacidad: <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
+</section>
 
-<hr>
+<section id="en" lang="en">
+<h1>Seedlings Privacy Policy</h1>
+<p class="fecha">Last updated: November 24, 2026</p>
 
-<h1 lang="en">Seedlings Privacy Policy</h1>
-<p class="fecha" lang="en">Last updated: November 4, 2026</p>
+<p>Seedlings is an Android game developed by Noah Reaver Games. This policy explains what data the game handles, why, and how to ask for its deletion.</p>
 
-<div lang="en">
-<p>Seedlings is an Android game developed by Noah Reaver Games. This policy explains what data the game handles.</p>
+<h2>Summary</h2>
+<p>We do not sell your data. We do not ask for your email, location or contacts. You can play without signing in to Google Play Games and while offline. Data that reaches our server is stored in Google Firebase and is encrypted in transit (HTTPS).</p>
 
-<h2>Data we collect</h2>
-<p><strong>None automatically.</strong> This version of Seedlings does not collect, send on its own or share any personal data or usage data with us or with third parties. It does not require an account or sign-in. The only exception is the performance report described in the next section, and only if you choose to send it.</p>
+<h2>Identifiers</h2>
+<p>When it connects, the game creates an anonymous identity per installation (Firebase Authentication) and uses a random identifier for your save. If you sign in to Google Play Games, it receives your Play Games name and player ID; it does not receive your email. So that nobody can use your save in your name, our server verifies that account with Google and stores a hash of the ID.</p>
 
-<h2>Performance report (optional)</h2>
-<p>In Settings, the test version offers a <strong>Send report</strong> button. When you tap it, the game creates a .zip file, saves it to your device's Downloads folder and opens the Android share menu so you can send it with the app you choose. Nothing is sent unless you complete that step.</p>
-<p>The report contains technical data: device model, Android and game version, RAM, graphics type, smoothness and memory logs, the game screens and images those logs refer to, and the reasons for the app's most recent closures. It does not contain your progress, your collection or personal data. Whoever receives it also sees what the app you use displays, such as your email address or phone number.</p>
-<p>We use the report only to improve the game's performance and do not share it with third parties. You can delete the file from Downloads at any time, and you can ask us to delete the copy we received by writing to the contact below.</p>
+<h2>Ranking</h2>
+<p>For the Ranking we send your player name (initially your Play Games name if you signed in; you can change it), your in-game profile and cover pictures, your Rank and your finished Arena matches (points, duration, turns and result). <strong>Other players in your table see your name, pictures, Rank and points.</strong> We also store signs of impossible or altered matches to prevent cheating.</p>
 
-<h2>Data stored on your device</h2>
-<p>Your game progress, collection and settings are stored only on your device and never leave it. Uninstalling the game or clearing its data deletes your progress.</p>
+<h2>Invitations</h2>
+<p>Each save has an invitation code. If you link to the person who invited you, through their link or code, we store <strong>who invited whom</strong> and the stickers you get from then on, to deliver rewards and prevent abuse. We also store when your save began and whether you finished your first biome, to check that the invitation is valid. The person who invited you sees your player name, your picture and the stickers you gave them; you see their name. Anything you share is sent by the app you choose. To read the code in the link, the game checks once the install source reported by Google Play.</p>
 
-<h2>Ads and purchases</h2>
-<p>This version shows no ads from any ad network and processes no real-money payments.</p>
+<h2>Statistics and errors</h2>
+<p>The game automatically sends usage statistics (sessions, progress, actions, resources, ads watched and purchases), device model, memory, Android and game versions, performance, errors and the reasons the app closed. They carry the installation and save identifiers, not your name. It also sends recordings of your Arena matches: these are the moves, not video or audio. We use them to fix problems, balance the game and improve its opponents.</p>
 
-<h2>Content downloads</h2>
-<p>Part of the game content is downloaded after installation through Google Play, which handles it under its own <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
+<h2>Report a problem</h2>
+<p>Only if you send it, “Report a problem” sends the message you write, technical logs, the session's statistics and a copy of your save, which includes your player name and your device and Play Games identifiers. We use it to find and fix the problem.</p>
+
+<h2>Cheat protection</h2>
+<p>The game may ask Google Play Integrity to confirm that the app is genuine and the device is not modified. We store the result and its date, linked to your installation.</p>
+
+<h2>Save and backup</h2>
+<p>Your save is stored on your device. If you sign in to Google Play Games, a copy is also kept in your account, using Google's saved games, so you can recover it on another device. That copy includes an identifier of the device that wrote it.</p>
+
+<h2>Ads</h2>
+<p>Rewarded ads are served by Google AdMob. Its SDK may collect and share with Google the advertising ID, app set ID and, where applicable, other identifiers related to accounts signed in on the device; IP address (from which an approximate location is inferred); your interaction with ads; and device and diagnostic data, to show and measure ads, for analytics and to prevent fraud. Ads may be personalized, with your consent where applicable. In that case, you will see a consent form before the first ad, and you can change your choice later in Settings › Ad privacy. You can delete or limit the advertising ID in Android settings. Learn more: <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a>.</p>
+
+<h2>Purchases</h2>
+<p>Payments are processed by Google Play; we do not receive your card details. The game receives the product and proof of purchase, records in your save which orders it has delivered, and logs the purchase in the statistics.</p>
+
+<h2>Google services and downloads</h2>
+<p>Firebase, Play Games, Play Integrity, AdMob, Google Play billing and content downloads process data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Like any online service, they receive your IP address. The game also downloads balance data and gifts for your save from our server.</p>
+
+<h2>Who data is shared with</h2>
+<p>Except for what other players see in the Ranking and invitations, what Google processes to provide these services, and what the law requires, we do not share your data with third parties.</p>
+
+<h2>Retention and deletion</h2>
+<p>We keep data for as long as it serves the purposes in this policy. To ask us to delete the data of your game account, write to <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a> with your player name and your invitation code so we can find it. Data on your device is deleted when you uninstall the game; the Play Games copy is managed from your Google account.</p>
 
 <h2>Children</h2>
-<p>The game is not directed at children under 13 and does not automatically collect data from anyone, including children.</p>
+<p>The game is not directed at children under 13. If you believe a child under that age gave us data, write to us and we will delete it.</p>
 
 <h2>Changes to this policy</h2>
-<p>If a future version of the game starts collecting data automatically (for example, match statistics used to balance the game, ads or purchases), this page will be updated before that version is released, explaining what data is collected and why.</p>
+<p>If what the game collects changes, we will update this page before releasing that version.</p>
 
 <h2>Contact</h2>
 <p>Privacy questions: <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
-</div>
+</section>
+
+<section id="pt" lang="pt">
+<h1>Política de privacidade do Seedlings</h1>
+<p class="fecha">Última atualização: 24 de novembro de 2026</p>
+
+<p>Seedlings é um jogo para Android desenvolvido pela Noah Reaver Games. Esta política explica quais dados o jogo trata, para quê e como pedir a exclusão deles.</p>
+
+<h2>Resumo</h2>
+<p>Não vendemos seus dados. Não pedimos seu e-mail, sua localização nem seus contatos. Você pode jogar sem entrar no Google Play Games e sem conexão. Os dados que chegam ao nosso servidor ficam no Google Firebase e trafegam criptografados (HTTPS).</p>
+
+<h2>Identificadores</h2>
+<p>Ao se conectar, o jogo cria uma identidade anônima por instalação (Firebase Authentication) e usa um identificador aleatório do seu progresso salvo. Se você entrar no Google Play Games, o jogo recebe seu nome e seu ID de jogador do Play Games; não recebe seu e-mail. Para que ninguém use seu progresso em seu nome, nosso servidor confirma essa conta com o Google e guarda um hash do ID.</p>
+
+<h2>Ranking</h2>
+<p>Para o Ranking, enviamos seu nome de jogador (no início, o do Play Games, se você tiver entrado; você pode mudá-lo), suas imagens de perfil e de capa do jogo, seu Ranque e suas partidas da Arena concluídas (pontos, duração, turnos e resultado). <strong>Os outros jogadores da sua tabela veem seu nome, suas imagens, seu Ranque e seus pontos.</strong> Também guardamos sinais de partidas impossíveis ou alteradas para evitar trapaças.</p>
+
+<h2>Convites</h2>
+<p>Cada progresso salvo tem um código de convite. Se você se vincular a quem convidou você, pelo link ou pelo código, guardamos <strong>quem convidou quem</strong> e as figurinhas que você consegue a partir daí, para entregar as recompensas e evitar abusos. Também guardamos quando seu progresso começou e se você terminou seu primeiro bioma, para verificar se o convite é válido. Quem convidou você vê seu nome de jogador, sua imagem e as figurinhas que recebeu por você; você vê o nome dessa pessoa. O que você compartilha é enviado pelo app que você escolher. Para ler o código do link, o jogo consulta uma vez a origem da instalação informada pelo Google Play.</p>
+
+<h2>Estatísticas e erros</h2>
+<p>O jogo envia automaticamente estatísticas de uso (sessões, progresso, ações, recursos, anúncios vistos e compras), o modelo do dispositivo, a memória, as versões do Android e do jogo, o desempenho, os erros e os motivos de encerramento do app. Esses dados levam o identificador da instalação e o do seu progresso, sem seu nome. O jogo também envia gravações das suas partidas da Arena: são as jogadas, não vídeo nem áudio. Usamos tudo isso para corrigir falhas, equilibrar o jogo e melhorar os adversários.</p>
+
+<h2>Relatar um problema</h2>
+<p>Somente se você enviar, «Relatar um problema» manda a mensagem que você escreve, os registros técnicos, as estatísticas da sessão e uma cópia do seu progresso, que inclui seu nome de jogador e os identificadores do seu dispositivo e do Play Games. Usamos isso para encontrar e corrigir o problema.</p>
+
+<h2>Proteção contra trapaças</h2>
+<p>O jogo pode pedir ao Google Play Integrity a confirmação de que o app é o original e de que o dispositivo não foi modificado. Guardamos o resultado e a data, associados à sua instalação.</p>
+
+<h2>Progresso e backup</h2>
+<p>Seu progresso fica salvo no seu dispositivo. Se você entrar no Google Play Games, uma cópia também fica na sua conta, nos jogos salvos do Google, para você recuperá-lo em outro dispositivo. Essa cópia inclui um identificador do dispositivo que a gravou.</p>
+
+<h2>Anúncios</h2>
+<p>Os anúncios com recompensa são exibidos pelo Google AdMob. O SDK dele pode coletar e compartilhar com o Google o identificador de publicidade, o identificador do conjunto de apps e, quando aplicável, outros identificadores relacionados às contas conectadas no dispositivo; o endereço IP (do qual se deduz uma localização aproximada); sua interação com os anúncios; e dados do dispositivo e de diagnóstico, para exibir e medir anúncios, gerar estatísticas e prevenir fraudes. Os anúncios podem ser personalizados, com o seu consentimento onde for aplicável. Nesse caso, você verá um formulário de consentimento antes do primeiro anúncio e poderá mudar sua escolha depois em Ajustes › Privacidade dos anúncios. Você pode excluir ou limitar o identificador de publicidade nas configurações do Android. Saiba mais: <a href="https://policies.google.com/technologies/partner-sites">como o Google usa os dados</a>.</p>
+
+<h2>Compras</h2>
+<p>Os pagamentos são processados pelo Google Play; não recebemos os dados do seu cartão. O jogo recebe o produto e o comprovante da compra, guarda no seu progresso quais pedidos já entregou e registra a compra nas estatísticas.</p>
+
+<h2>Serviços do Google e downloads</h2>
+<p>O Firebase, o Play Games, o Play Integrity, o AdMob, o faturamento e os downloads de conteúdo do Google Play tratam dados conforme a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>. Como qualquer serviço on-line, eles recebem seu endereço IP. O jogo também baixa do nosso servidor dados de balanceamento e presentes para o seu progresso.</p>
+
+<h2>Com quem os dados são compartilhados</h2>
+<p>Exceto o que outros jogadores veem no Ranking e nos convites, o que o Google trata para prestar esses serviços e o que a lei exigir, não compartilhamos seus dados com terceiros.</p>
+
+<h2>Conservação e exclusão</h2>
+<p>Conservamos os dados enquanto servirem às finalidades desta política. Para pedir a exclusão dos dados da sua conta do jogo, escreva para <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a> com seu nome de jogador e seu código de convite, para que possamos localizá-la. Os dados do seu dispositivo são apagados quando você desinstala o jogo; a cópia do Play Games é administrada na sua conta do Google.</p>
+
+<h2>Crianças</h2>
+<p>O jogo não é direcionado a menores de 13 anos. Se você acredita que uma criança abaixo dessa idade nos forneceu dados, escreva para nós e os excluiremos.</p>
+
+<h2>Mudanças nesta política</h2>
+<p>Se mudar o que o jogo coleta, atualizaremos esta página antes de publicar essa versão.</p>
+
+<h2>Contato</h2>
+<p>Dúvidas sobre privacidade: <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
+</section>
+
+<section id="fr" lang="fr">
+<h1>Politique de confidentialité de Seedlings</h1>
+<p class="fecha">Dernière mise à jour : 24 novembre 2026</p>
+
+<p>Seedlings est un jeu Android développé par Noah Reaver Games. Cette politique explique quelles données le jeu traite, pourquoi, et comment en demander la suppression.</p>
+
+<h2>En bref</h2>
+<p>Nous ne vendons pas tes données. Nous ne demandons ni ton adresse e-mail, ni ta position, ni tes contacts. Tu peux jouer sans te connecter à Google Play Jeux et hors ligne. Les données qui parviennent à notre serveur sont conservées dans Google Firebase et chiffrées pendant leur transfert (HTTPS).</p>
+
+<h2>Identifiants</h2>
+<p>Lorsqu’il se connecte, le jeu crée une identité anonyme par installation (Firebase Authentication) et utilise un identifiant aléatoire de ta sauvegarde. Si tu te connectes à Google Play Jeux, il reçoit ton nom et ton identifiant de joueur Play Jeux ; il ne reçoit pas ton adresse e-mail. Pour que personne n’utilise ta sauvegarde à ta place, notre serveur vérifie ce compte auprès de Google et conserve une empreinte (hash) de l’identifiant.</p>
+
+<h2>Classement</h2>
+<p>Pour le Classement, nous envoyons ton nom de joueur (au départ celui de Play Jeux si tu t’es connecté ; tu peux le changer), tes images de profil et de couverture du jeu, ton Rang et tes parties d’Arène terminées (points, durée, tours et résultat). <strong>Les autres joueurs de ton tableau voient ton nom, tes images, ton Rang et tes points.</strong> Nous conservons aussi les indices de parties impossibles ou modifiées afin d’empêcher la triche.</p>
+
+<h2>Invitations</h2>
+<p>Chaque sauvegarde a un code d’invitation. Si tu te relies à la personne qui t’a invité, par son lien ou son code, nous conservons <strong>qui a invité qui</strong> et les stickers que tu obtiens ensuite, pour remettre les récompenses et éviter les abus. Nous conservons aussi la date de début de ta sauvegarde et le fait que tu aies terminé ou non ton premier biome, pour vérifier que l’invitation est valable. La personne qui t’a invité voit ton nom de joueur, ton image et les stickers que tu lui as apportés ; tu vois son nom. Ce que tu partages est envoyé par l’application de ton choix. Pour lire le code du lien, le jeu consulte une fois l’origine de l’installation indiquée par Google Play.</p>
+
+<h2>Statistiques et erreurs</h2>
+<p>Le jeu envoie automatiquement des statistiques d’utilisation (sessions, progression, actions, ressources, publicités vues et achats), le modèle de l’appareil, la mémoire, les versions d’Android et du jeu, les performances, les erreurs et les raisons de fermeture de l’application. Elles portent l’identifiant de l’installation et celui de ta sauvegarde, sans ton nom. Il envoie aussi des enregistrements de tes parties d’Arène : ce sont les coups joués, sans vidéo ni son. Nous les utilisons pour corriger les problèmes, équilibrer le jeu et améliorer les adversaires.</p>
+
+<h2>Signaler un problème</h2>
+<p>Uniquement si tu l’envoies, « Signaler un problème » transmet le message que tu écris, les journaux techniques, les statistiques de la session et une copie de ta sauvegarde, qui contient ton nom de joueur et les identifiants de ton appareil et de Play Jeux. Nous les utilisons pour trouver et corriger le problème.</p>
+
+<h2>Protection contre la triche</h2>
+<p>Le jeu peut demander à Google Play Integrity de confirmer que l’application est authentique et que l’appareil n’est pas modifié. Nous conservons le résultat et sa date, associés à ton installation.</p>
+
+<h2>Sauvegarde et copie en ligne</h2>
+<p>Ta sauvegarde est conservée sur ton appareil. Si tu te connectes à Google Play Jeux, une copie est aussi conservée dans ton compte, avec les parties enregistrées de Google, pour la récupérer sur un autre appareil. Cette copie contient un identifiant de l’appareil qui l’a écrite.</p>
+
+<h2>Publicités</h2>
+<p>Les publicités avec récompense sont diffusées par Google AdMob. Son SDK peut collecter et partager avec Google l’identifiant publicitaire, l’identifiant d’ensemble d’applications et, le cas échéant, d’autres identifiants liés aux comptes connectés sur l’appareil ; l’adresse IP (dont se déduit une position approximative) ; tes interactions avec les publicités ; ainsi que des données sur l’appareil et de diagnostic, pour diffuser et mesurer les publicités, établir des statistiques et prévenir la fraude. Les publicités peuvent être personnalisées, avec ton consentement là où il est requis. Dans ce cas, un formulaire de consentement s’affiche avant la première publicité, et tu peux modifier ton choix par la suite dans Réglages › Confidentialité des publicités. Tu peux supprimer ou limiter l’identifiant publicitaire dans les paramètres d’Android. En savoir plus : <a href="https://policies.google.com/technologies/partner-sites">comment Google utilise les données</a>.</p>
+
+<h2>Achats</h2>
+<p>Les paiements sont traités par Google Play ; nous ne recevons pas les données de ta carte. Le jeu reçoit le produit et la preuve d’achat, note dans ta sauvegarde les commandes déjà remises et enregistre l’achat dans les statistiques.</p>
+
+<h2>Services Google et téléchargements</h2>
+<p>Firebase, Play Jeux, Play Integrity, AdMob, la facturation et les téléchargements de contenu de Google Play traitent des données selon les <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>. Comme tout service en ligne, ils reçoivent ton adresse IP. Le jeu télécharge aussi depuis notre serveur des données d’équilibrage et des cadeaux pour ta sauvegarde.</p>
+
+<h2>Partage des données</h2>
+<p>À part ce que les autres joueurs voient dans le Classement et les invitations, ce que Google traite pour fournir ces services et ce que la loi exige, nous ne partageons pas tes données avec des tiers.</p>
+
+<h2>Conservation et suppression</h2>
+<p>Nous conservons les données tant qu’elles servent aux finalités de cette politique. Pour demander la suppression des données de ton compte de jeu, écris à <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a> avec ton nom de joueur et ton code d’invitation, afin que nous puissions le retrouver. Les données de ton appareil sont effacées quand tu désinstalles le jeu ; la copie de Play Jeux se gère depuis ton compte Google.</p>
+
+<h2>Enfants</h2>
+<p>Le jeu ne s’adresse pas aux enfants de moins de 13 ans. Si tu penses qu’un enfant de moins de cet âge nous a fourni des données, écris-nous et nous les supprimerons.</p>
+
+<h2>Modifications de cette politique</h2>
+<p>Si ce que le jeu collecte change, nous mettrons cette page à jour avant de publier la version concernée.</p>
+
+<h2>Contact</h2>
+<p>Questions sur la confidentialité : <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
+</section>
+
+<section id="de" lang="de">
+<h1>Datenschutzerklärung von Seedlings</h1>
+<p class="fecha">Letzte Aktualisierung: 24. November 2026</p>
+
+<p>Seedlings ist ein Android-Spiel, entwickelt von Noah Reaver Games. Diese Erklärung beschreibt, welche Daten das Spiel verarbeitet, wofür und wie du ihre Löschung verlangen kannst.</p>
+
+<h2>Kurz gesagt</h2>
+<p>Wir verkaufen deine Daten nicht. Wir fragen weder nach deiner E-Mail-Adresse noch nach deinem Standort oder deinen Kontakten. Du kannst ohne Anmeldung bei Google Play Spiele und offline spielen. Daten, die unseren Server erreichen, werden in Google Firebase gespeichert und verschlüsselt übertragen (HTTPS).</p>
+
+<h2>Kennungen</h2>
+<p>Sobald es online ist, legt das Spiel pro Installation eine anonyme Identität an (Firebase Authentication) und verwendet eine zufällige Kennung deines Spielstands. Wenn du dich bei Google Play Spiele anmeldest, erhält es deinen Namen und deine Spieler-ID von Play Spiele; deine E-Mail-Adresse erhält es nicht. Damit niemand deinen Spielstand in deinem Namen nutzt, prüft unser Server dieses Konto bei Google und speichert einen Hash der ID.</p>
+
+<h2>Rangliste</h2>
+<p>Für die Rangliste senden wir deinen Spielernamen (anfangs den von Play Spiele, falls du angemeldet bist; du kannst ihn ändern), deine Profil- und Titelbilder aus dem Spiel, deinen Rang und deine beendeten Arena-Partien (Punkte, Dauer, Züge und Ergebnis). <strong>Andere Spieler in deiner Tabelle sehen deinen Namen, deine Bilder, deinen Rang und deine Punkte.</strong> Außerdem speichern wir Hinweise auf unmögliche oder veränderte Partien, um Betrug zu verhindern.</p>
+
+<h2>Einladungen</h2>
+<p>Jeder Spielstand hat einen Einladungscode. Wenn du dich über Link oder Code mit der Person verbindest, die dich eingeladen hat, speichern wir, <strong>wer wen eingeladen hat</strong>, und die Sticker, die du ab dann erhältst, um Belohnungen zu übergeben und Missbrauch zu verhindern. Wir speichern auch, wann dein Spielstand begonnen hat und ob du dein erstes Biom abgeschlossen hast, um zu prüfen, ob die Einladung gültig ist. Die Person, die dich eingeladen hat, sieht deinen Spielernamen, dein Bild und die Sticker, die sie durch dich bekommen hat; du siehst ihren Namen. Was du teilst, versendet die App, die du auswählst. Um den Code im Link zu lesen, fragt das Spiel einmal die von Google Play gemeldete Installationsquelle ab.</p>
+
+<h2>Statistiken und Fehler</h2>
+<p>Das Spiel sendet automatisch Nutzungsstatistiken (Sitzungen, Fortschritt, Aktionen, Ressourcen, gesehene Werbung und Käufe), Gerätemodell, Arbeitsspeicher, Android- und Spielversion, Leistung, Fehler und die Gründe, aus denen die App beendet wurde. Sie tragen die Kennung der Installation und die deines Spielstands, nicht deinen Namen. Es sendet auch Aufzeichnungen deiner Arena-Partien: Das sind die Spielzüge, weder Video noch Ton. Wir nutzen sie, um Fehler zu beheben, das Spiel auszubalancieren und die Gegner zu verbessern.</p>
+
+<h2>Problem melden</h2>
+<p>Nur wenn du sie abschickst, sendet „Problem melden“ deine Nachricht, technische Protokolle, die Statistiken der Sitzung und eine Kopie deines Spielstands, die deinen Spielernamen und die Kennungen deines Geräts und von Play Spiele enthält. Wir nutzen das, um das Problem zu finden und zu beheben.</p>
+
+<h2>Schutz vor Betrug</h2>
+<p>Das Spiel kann Google Play Integrity um die Bestätigung bitten, dass die App echt und das Gerät nicht verändert ist. Wir speichern das Ergebnis und sein Datum zusammen mit deiner Installation.</p>
+
+<h2>Spielstand und Sicherung</h2>
+<p>Dein Spielstand wird auf deinem Gerät gespeichert. Wenn du dich bei Google Play Spiele anmeldest, liegt außerdem eine Kopie in deinem Konto, in den gespeicherten Spielen von Google, damit du ihn auf einem anderen Gerät wiederherstellen kannst. Diese Kopie enthält eine Kennung des Geräts, das sie geschrieben hat.</p>
+
+<h2>Werbung</h2>
+<p>Werbung mit Belohnung wird von Google AdMob bereitgestellt. Dessen SDK kann die Werbe-ID, die App-Set-ID und gegebenenfalls weitere Kennungen im Zusammenhang mit den auf dem Gerät angemeldeten Konten, die IP-Adresse (aus der sich ein ungefährer Standort ableiten lässt), deine Interaktion mit der Werbung sowie Geräte- und Diagnosedaten erheben und mit Google teilen, um Werbung anzuzeigen und zu messen, Statistiken zu erstellen und Betrug zu verhindern. Werbung kann personalisiert sein, wo erforderlich mit deiner Einwilligung. In diesem Fall erscheint vor der ersten Werbung ein Einwilligungsformular, und du kannst deine Auswahl später unter Einstellungen › Datenschutz bei Werbung ändern. Du kannst die Werbe-ID in den Android-Einstellungen löschen oder einschränken. Mehr dazu: <a href="https://policies.google.com/technologies/partner-sites">wie Google Daten verwendet</a>.</p>
+
+<h2>Käufe</h2>
+<p>Zahlungen wickelt Google Play ab; deine Kartendaten erhalten wir nicht. Das Spiel erhält das Produkt und den Kaufbeleg, vermerkt in deinem Spielstand, welche Bestellungen es bereits ausgeliefert hat, und erfasst den Kauf in den Statistiken.</p>
+
+<h2>Google-Dienste und Downloads</h2>
+<p>Firebase, Play Spiele, Play Integrity, AdMob sowie die Abrechnung und die Inhaltsdownloads von Google Play verarbeiten Daten gemäß der <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>. Wie jeder Onlinedienst erhalten sie deine IP-Adresse. Das Spiel lädt außerdem Balancedaten und Geschenke für deinen Spielstand von unserem Server herunter.</p>
+
+<h2>Weitergabe von Daten</h2>
+<p>Abgesehen von dem, was andere Spieler in der Rangliste und bei Einladungen sehen, was Google zur Erbringung dieser Dienste verarbeitet und was das Gesetz verlangt, geben wir deine Daten nicht an Dritte weiter.</p>
+
+<h2>Aufbewahrung und Löschung</h2>
+<p>Wir bewahren die Daten so lange auf, wie sie den Zwecken dieser Erklärung dienen. Um die Löschung der Daten deines Spielkontos zu verlangen, schreibe an <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a> und nenne deinen Spielernamen und deinen Einladungscode, damit wir es finden können. Die Daten auf deinem Gerät werden gelöscht, wenn du das Spiel deinstallierst; die Kopie bei Play Spiele verwaltest du in deinem Google-Konto.</p>
+
+<h2>Kinder</h2>
+<p>Das Spiel richtet sich nicht an Kinder unter 13 Jahren. Wenn du glaubst, dass uns ein Kind unter diesem Alter Daten gegeben hat, schreibe uns, und wir löschen sie.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Ändert sich, was das Spiel erhebt, aktualisieren wir diese Seite, bevor wir die entsprechende Version veröffentlichen.</p>
+
+<h2>Kontakt</h2>
+<p>Fragen zum Datenschutz: <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
+</section>
+
+<section id="ja" lang="ja">
+<h1>Seedlings プライバシーポリシー</h1>
+<p class="fecha">最終更新日：2026年11月24日</p>
+
+<p>Seedlingsは、Noah Reaver Gamesが開発したAndroid向けゲームです。本ポリシーでは、本ゲームが取り扱うデータ、その目的、および削除を依頼する方法を説明します。</p>
+
+<h2>概要</h2>
+<p>お客様のデータを販売することはありません。メールアドレス、位置情報、連絡先の提供を求めることもありません。Google Play ゲームにログインしなくても、オフラインでもプレイできます。当方のサーバーに届いたデータはGoogle Firebaseに保存され、通信は暗号化されます（HTTPS）。</p>
+
+<h2>識別子</h2>
+<p>オンラインになると、本ゲームはインストールごとに匿名のIDを作成し（Firebase Authentication）、セーブデータのランダムな識別子を使用します。Google Play ゲームにログインすると、Play ゲームの名前とプレイヤーIDを受け取ります。メールアドレスは受け取りません。第三者がお客様になりすましてセーブデータを使うことを防ぐため、当方のサーバーはGoogleにそのアカウントを確認し、IDのハッシュ値を保存します。</p>
+
+<h2>ランキング</h2>
+<p>ランキングのために、プレイヤー名（ログインしている場合、初めはPlay ゲームの名前。変更できます）、ゲーム内のプロフィール画像とカバー画像、ランク、終了したアリーナの対戦（ポイント、所要時間、ターン数、結果）を送信します。<strong>同じ表にいる他のプレイヤーには、お客様の名前、画像、ランク、ポイントが表示されます。</strong>不正を防ぐため、ありえない対戦や改変された対戦の兆候も保存します。</p>
+
+<h2>招待</h2>
+<p>セーブデータごとに招待コードがあります。リンクまたはコードで招待者と紐付けると、報酬を渡し不正利用を防ぐために、<strong>誰が誰を招待したか</strong>と、それ以降に手に入れたステッカーを保存します。また、招待が有効かどうかを確認するため、セーブデータの開始時期と、最初のバイオームを終えたかどうかも保存します。招待者には、お客様のプレイヤー名、画像、お客様によって受け取ったステッカーが表示され、お客様には招待者の名前が表示されます。共有する内容は、お客様が選んだアプリから送信されます。リンクのコードを読み取るため、本ゲームはGoogle Playが提供するインストール元の情報を一度確認します。</p>
+
+<h2>統計とエラー</h2>
+<p>本ゲームは、利用統計（セッション、進行状況、操作、資源、視聴した広告、購入）、端末の機種、メモリ、Androidとゲームのバージョン、動作状況、エラー、アプリが終了した理由を自動的に送信します。これらにはインストールとセーブデータの識別子が付きますが、名前は含まれません。アリーナの対戦の記録も送信します。記録されるのは手順であり、映像や音声ではありません。不具合の修正、ゲームバランスの調整、対戦相手の改善に使用します。</p>
+
+<h2>問題を報告</h2>
+<p>お客様が送信した場合に限り、「問題を報告」は、入力したメッセージ、技術的なログ、そのセッションの統計、セーブデータのコピーを送信します。コピーには、プレイヤー名、端末の識別子、Play ゲームの識別子が含まれます。問題の特定と修正に使用します。</p>
+
+<h2>不正対策</h2>
+<p>本ゲームは、アプリが正規のものであり、端末が改変されていないことの確認をGoogle Play Integrityに求めることがあります。その結果と日時を、お客様のインストールに関連付けて保存します。</p>
+
+<h2>セーブデータとバックアップ</h2>
+<p>セーブデータはお客様の端末に保存されます。Google Play ゲームにログインすると、別の端末で復元できるように、Googleの保存済みゲームを使ってお客様のアカウントにもコピーが保存されます。このコピーには、書き込んだ端末の識別子が含まれます。</p>
+
+<h2>広告</h2>
+<p>報酬付き広告はGoogle AdMobが配信します。AdMobのSDKは、広告の表示と測定、統計分析、および不正防止のために、広告ID、アプリセットID、該当する場合は端末でログイン中のアカウントに関連するその他の識別子、IPアドレス（おおよその位置が推定されます）、広告に対する操作、端末および診断に関するデータを収集し、Googleと共有することがあります。広告はパーソナライズされることがあり、必要な地域ではお客様の同意を得たうえで行われます。その場合、最初の広告の前に同意フォームが表示され、選択内容は後から「設定 › 広告のプライバシー設定」で変更できます。広告IDはAndroidの設定で削除または制限できます。詳しくは<a href="https://policies.google.com/technologies/partner-sites">Googleによるデータの使用方法</a>をご覧ください。</p>
+
+<h2>購入</h2>
+<p>お支払いはGoogle Playが処理し、当方がカード情報を受け取ることはありません。本ゲームは商品と購入の証明を受け取り、引き渡し済みの注文をセーブデータに記録し、購入を統計に記録します。</p>
+
+<h2>Googleのサービスとダウンロード</h2>
+<p>Firebase、Play ゲーム、Play Integrity、AdMob、Google Playの課金およびコンテンツのダウンロードは、<a href="https://policies.google.com/privacy">Googleのプライバシー ポリシー</a>に従ってデータを処理します。他のオンラインサービスと同様に、これらはお客様のIPアドレスを受け取ります。また本ゲームは、ゲームバランスのデータとセーブデータへのギフトを当方のサーバーからダウンロードします。</p>
+
+<h2>データの共有先</h2>
+<p>ランキングと招待で他のプレイヤーに表示されるもの、これらのサービスを提供するためにGoogleが処理するもの、法令で求められるものを除き、お客様のデータを第三者と共有することはありません。</p>
+
+<h2>保存と削除</h2>
+<p>データは、本ポリシーの目的に必要な間保存します。ゲームアカウントのデータの削除を依頼するには、アカウントを特定できるよう、プレイヤー名と招待コードを添えて<a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a>までご連絡ください。端末上のデータは、ゲームをアンインストールすると削除されます。Play ゲームのコピーは、お客様のGoogleアカウントで管理できます。</p>
+
+<h2>お子様について</h2>
+<p>本ゲームは13歳未満のお子様を対象としていません。13歳未満のお子様が当方にデータを提供したと思われる場合は、ご連絡ください。削除いたします。</p>
+
+<h2>本ポリシーの変更</h2>
+<p>本ゲームが収集する内容が変わる場合は、そのバージョンを公開する前にこのページを更新します。</p>
+
+<h2>お問い合わせ</h2>
+<p>プライバシーに関するお問い合わせ：<a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
+</section>
+
+<section id="ko" lang="ko">
+<h1>Seedlings 개인정보처리방침</h1>
+<p class="fecha">최종 업데이트: 2026년 11월 24일</p>
+
+<p>Seedlings는 Noah Reaver Games가 개발한 Android 게임입니다. 본 방침은 게임이 처리하는 데이터와 그 목적, 삭제를 요청하는 방법을 설명합니다.</p>
+
+<h2>요약</h2>
+<p>이용자의 데이터를 판매하지 않습니다. 이메일, 위치, 연락처를 요구하지 않습니다. Google Play 게임에 로그인하지 않아도, 오프라인에서도 플레이할 수 있습니다. 당사 서버에 전달된 데이터는 Google Firebase에 저장되며 암호화되어 전송됩니다(HTTPS).</p>
+
+<h2>식별자</h2>
+<p>온라인에 연결되면 게임은 설치마다 익명 ID를 만들고(Firebase Authentication) 저장 데이터의 무작위 식별자를 사용합니다. Google Play 게임에 로그인하면 Play 게임의 이름과 플레이어 ID를 받으며, 이메일은 받지 않습니다. 다른 사람이 이용자의 저장 데이터를 사용하지 못하도록 당사 서버는 Google을 통해 해당 계정을 확인하고 ID의 해시값을 저장합니다.</p>
+
+<h2>랭킹</h2>
+<p>랭킹을 위해 플레이어 이름(로그인한 경우 처음에는 Play 게임의 이름이며 변경할 수 있습니다), 게임 내 프로필 및 커버 이미지, 등급, 완료한 아레나 대전(점수, 소요 시간, 턴 수, 결과)을 전송합니다. <strong>같은 표에 있는 다른 플레이어에게 이름, 이미지, 등급, 점수가 표시됩니다.</strong> 부정행위를 막기 위해 불가능하거나 변조된 대전의 징후도 저장합니다.</p>
+
+<h2>초대</h2>
+<p>저장 데이터마다 초대 코드가 있습니다. 링크나 코드로 초대한 사람과 연결하면 보상을 지급하고 악용을 막기 위해 <strong>누가 누구를 초대했는지</strong>와 그 이후 획득한 스티커를 저장합니다. 초대가 유효한지 확인하기 위해 저장 데이터가 시작된 시점과 첫 바이옴을 마쳤는지도 저장합니다. 초대한 사람에게는 이용자의 플레이어 이름, 이미지, 이용자 덕분에 받은 스티커가 표시되며, 이용자에게는 초대한 사람의 이름이 표시됩니다. 공유하는 내용은 이용자가 선택한 앱이 전송합니다. 링크의 코드를 읽기 위해 게임은 Google Play가 제공하는 설치 출처를 한 번 확인합니다.</p>
+
+<h2>통계 및 오류</h2>
+<p>게임은 이용 통계(세션, 진행 상황, 행동, 자원, 시청한 광고, 구매), 기기 모델, 메모리, Android 및 게임 버전, 성능, 오류, 앱이 종료된 이유를 자동으로 전송합니다. 여기에는 설치 및 저장 데이터의 식별자가 포함되며 이름은 포함되지 않습니다. 아레나 대전 기록도 전송합니다. 이는 플레이한 수의 기록이며 영상이나 음성이 아닙니다. 오류 수정, 게임 밸런스 조정, 상대 개선에 사용합니다.</p>
+
+<h2>문제 신고</h2>
+<p>이용자가 보내는 경우에만 ‘문제 신고’는 작성한 메시지, 기술 로그, 해당 세션의 통계, 저장 데이터의 사본을 전송합니다. 사본에는 플레이어 이름과 기기 및 Play 게임의 식별자가 포함됩니다. 문제를 찾아 해결하는 데 사용합니다.</p>
+
+<h2>부정행위 방지</h2>
+<p>게임은 앱이 정품이고 기기가 변조되지 않았는지 Google Play Integrity에 확인을 요청할 수 있습니다. 그 결과와 날짜를 이용자의 설치와 연결하여 저장합니다.</p>
+
+<h2>저장 데이터 및 백업</h2>
+<p>저장 데이터는 이용자의 기기에 저장됩니다. Google Play 게임에 로그인하면 다른 기기에서 복구할 수 있도록 Google의 저장된 게임을 통해 이용자 계정에도 사본이 보관됩니다. 이 사본에는 이를 기록한 기기의 식별자가 포함됩니다.</p>
+
+<h2>광고</h2>
+<p>보상형 광고는 Google AdMob이 제공합니다. AdMob SDK는 광고를 표시하고 측정하며 통계를 분석하고 사기를 방지하기 위해 광고 ID, 앱 세트 ID, 해당하는 경우 기기에 로그인된 계정과 관련된 기타 식별자, IP 주소(대략적인 위치를 추정할 수 있음), 광고와의 상호작용, 기기 및 진단 데이터를 수집하여 Google과 공유할 수 있습니다. 광고는 맞춤설정될 수 있으며, 필요한 지역에서는 이용자의 동의를 받습니다. 이 경우 첫 광고 전에 동의 양식이 표시되며, 이후 설정 › 광고 개인정보 설정에서 선택을 변경할 수 있습니다. 광고 ID는 Android 설정에서 삭제하거나 제한할 수 있습니다. 자세한 내용: <a href="https://policies.google.com/technologies/partner-sites">Google의 데이터 사용 방식</a>.</p>
+
+<h2>구매</h2>
+<p>결제는 Google Play가 처리하며 당사는 카드 정보를 받지 않습니다. 게임은 상품과 구매 증명을 받고, 이미 지급한 주문을 저장 데이터에 기록하며, 구매를 통계에 기록합니다.</p>
+
+<h2>Google 서비스 및 다운로드</h2>
+<p>Firebase, Play 게임, Play Integrity, AdMob, Google Play의 결제 및 콘텐츠 다운로드는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따라 데이터를 처리합니다. 다른 온라인 서비스와 마찬가지로 이용자의 IP 주소를 받습니다. 게임은 당사 서버에서 밸런스 데이터와 저장 데이터에 지급되는 선물도 다운로드합니다.</p>
+
+<h2>데이터 공유 대상</h2>
+<p>랭킹과 초대에서 다른 플레이어에게 표시되는 내용, 이러한 서비스를 제공하기 위해 Google이 처리하는 내용, 법률이 요구하는 경우를 제외하고 이용자의 데이터를 제3자와 공유하지 않습니다.</p>
+
+<h2>보관 및 삭제</h2>
+<p>데이터는 본 방침의 목적에 필요한 동안 보관합니다. 게임 계정의 데이터 삭제를 요청하려면 계정을 찾을 수 있도록 플레이어 이름과 초대 코드를 적어 <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a>(으)로 보내 주세요. 기기의 데이터는 게임을 삭제하면 지워지며, Play 게임의 사본은 이용자의 Google 계정에서 관리할 수 있습니다.</p>
+
+<h2>아동</h2>
+<p>본 게임은 13세 미만 아동을 대상으로 하지 않습니다. 13세 미만 아동이 당사에 데이터를 제공했다고 생각되면 알려 주세요. 해당 데이터를 삭제하겠습니다.</p>
+
+<h2>방침의 변경</h2>
+<p>게임이 수집하는 내용이 바뀌면 해당 버전을 출시하기 전에 이 페이지를 업데이트합니다.</p>
+
+<h2>문의</h2>
+<p>개인정보 관련 문의: <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
+</section>
+
+<section id="zh-Hant" lang="zh-Hant">
+<h1>Seedlings 隱私權政策</h1>
+<p class="fecha">最後更新：2026 年 11 月 24 日</p>
+
+<p>Seedlings 是由 Noah Reaver Games 開發的 Android 遊戲。本政策說明遊戲會處理哪些資料、用途，以及如何要求刪除。</p>
+
+<h2>摘要</h2>
+<p>我們不會出售你的資料，也不會要求你提供電子郵件、位置或聯絡人。你可以不登入 Google Play 遊戲，也可以離線遊玩。傳到我們伺服器的資料儲存在 Google Firebase，並以加密方式傳輸（HTTPS）。</p>
+
+<h2>識別碼</h2>
+<p>連線時，遊戲會為每次安裝建立一個匿名身分（Firebase Authentication），並使用你存檔的隨機識別碼。如果你登入 Google Play 遊戲，遊戲會收到你在 Play 遊戲的名稱和玩家 ID，但不會收到你的電子郵件。為了避免他人冒用你的存檔，我們的伺服器會向 Google 驗證該帳號，並儲存該 ID 的雜湊值。</p>
+
+<h2>排行榜</h2>
+<p>為了排行榜，我們會傳送你的玩家名稱（若你已登入，一開始為 Play 遊戲的名稱；你可以更改）、遊戲中的個人圖片和封面圖片、你的階級，以及你已結束的競技場對局（分數、時間、回合數和結果）。<strong>同一張表中的其他玩家會看到你的名稱、圖片、階級和分數。</strong>我們也會儲存不可能或遭竄改之對局的跡象，以防止作弊。</p>
+
+<h2>邀請</h2>
+<p>每個存檔都有一組邀請碼。如果你透過連結或邀請碼與邀請你的人建立關聯，我們會儲存<strong>誰邀請了誰</strong>，以及你此後獲得的貼紙，用來發放獎勵並防止濫用。我們也會儲存你的存檔開始的時間，以及你是否已完成第一個生態域，以確認邀請是否有效。邀請你的人會看到你的玩家名稱、圖片，以及因你而獲得的貼紙；你會看到對方的名稱。你分享的內容由你選擇的應用程式傳送。為了讀取連結中的邀請碼，遊戲會查詢一次 Google Play 提供的安裝來源。</p>
+
+<h2>統計與錯誤</h2>
+<p>遊戲會自動傳送使用統計（工作階段、進度、操作、資源、觀看的廣告和購買）、裝置型號、記憶體、Android 與遊戲版本、效能、錯誤，以及應用程式關閉的原因。這些資料帶有安裝和存檔的識別碼，不含你的名稱。遊戲也會傳送你的競技場對局紀錄：內容是操作步驟，不是影片或聲音。我們用這些資料來修正問題、平衡遊戲並改進對手。</p>
+
+<h2>回報問題</h2>
+<p>只有在你送出時，「回報問題」才會傳送你寫的訊息、技術紀錄、該工作階段的統計，以及你的存檔副本，其中包含你的玩家名稱，以及你裝置和 Play 遊戲的識別碼。我們用這些資料來找出並修正問題。</p>
+
+<h2>防止作弊</h2>
+<p>遊戲可能會要求 Google Play Integrity 確認應用程式為正版，且裝置未遭修改。我們會儲存結果和日期，並與你的安裝建立關聯。</p>
+
+<h2>存檔與備份</h2>
+<p>你的存檔儲存在你的裝置上。如果你登入 Google Play 遊戲，也會透過 Google 的已儲存遊戲在你的帳號中保留一份副本，讓你能在其他裝置上復原。這份副本包含寫入它的裝置的識別碼。</p>
+
+<h2>廣告</h2>
+<p>獎勵廣告由 Google AdMob 提供。其 SDK 可能會收集並與 Google 分享廣告 ID、應用程式組 ID，以及（在適用情況下）與裝置上已登入帳戶相關的其他識別碼、IP 位址（可推知大略位置）、你與廣告的互動，以及裝置和診斷資料，用來顯示和評估廣告、進行統計分析並防止詐欺。廣告可能會個人化；在需要的地區，會先徵得你的同意。在這種情況下，第一則廣告之前會顯示同意聲明表單，之後你可以在「設定 › 廣告隱私設定」變更選擇。你可以在 Android 設定中刪除或限制廣告 ID。瞭解詳情：<a href="https://policies.google.com/technologies/partner-sites">Google 如何使用資料</a>。</p>
+
+<h2>購買</h2>
+<p>付款由 Google Play 處理，我們不會收到你的信用卡資料。遊戲會收到商品和購買證明，在你的存檔中記錄已交付的訂單，並在統計中記錄該筆購買。</p>
+
+<h2>Google 服務與下載</h2>
+<p>Firebase、Play 遊戲、Play Integrity、AdMob，以及 Google Play 的帳款服務和內容下載，會依照 <a href="https://policies.google.com/privacy">Google 隱私權政策</a> 處理資料。如同任何線上服務，它們會收到你的 IP 位址。遊戲也會從我們的伺服器下載平衡資料和送給你存檔的禮物。</p>
+
+<h2>資料的分享對象</h2>
+<p>除了其他玩家在排行榜和邀請中看到的內容、Google 為提供這些服務而處理的內容，以及法律要求的情況之外，我們不會與第三方分享你的資料。</p>
+
+<h2>保存與刪除</h2>
+<p>只要資料仍為本政策所述目的所需，我們就會保存。若要要求刪除你遊戲帳號的資料，請寄信至 <a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a>，並附上你的玩家名稱和邀請碼，以便我們找到你的帳號。解除安裝遊戲會刪除裝置上的資料；Play 遊戲的副本可在你的 Google 帳號中管理。</p>
+
+<h2>兒童</h2>
+<p>本遊戲並非以 13 歲以下兒童為對象。如果你認為有未滿 13 歲的兒童向我們提供了資料，請來信告知，我們會將其刪除。</p>
+
+<h2>本政策的變更</h2>
+<p>如果遊戲收集的內容有所變更，我們會在發布該版本之前更新本頁。</p>
+
+<h2>聯絡方式</h2>
+<p>隱私權相關問題：<a href="mailto:noah.reaver.ea@gmail.com">noah.reaver.ea@gmail.com</a></p>
+</section>
+
+<script>
+// Un idioma a la vez: el del enlace (#ja), si no el del navegador, si no inglés. Sin JavaScript se ven todos, uno debajo del otro.
+(function () {
+  var ids = [].map.call(document.querySelectorAll('section'), function (s) { return s.id; });
+  function elegir() {
+    var h = location.hash.slice(1);
+    if (ids.indexOf(h) >= 0) return h;
+    var l = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < l.length; i++) {
+      var c = l[i].toLowerCase().split('-')[0];
+      if (c === 'zh') return 'zh-Hant';
+      if (ids.indexOf(c) >= 0) return c;
+    }
+    return 'en';
+  }
+  function mostrar() {
+    var id = elegir();
+    document.body.className = 'uno';
+    document.documentElement.lang = id;
+    ids.forEach(function (x) {
+      document.getElementById(x).className = x === id ? 'ver' : '';
+      var a = document.querySelector('nav a[href="#' + x + '"]');
+      if (x === id) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+    });
+    document.title = document.querySelector('#' + id + ' h1').textContent;
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', mostrar);
+  mostrar();
+})();
+</script>
 
 </body>
 </html>
